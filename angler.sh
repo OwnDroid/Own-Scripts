@@ -22,7 +22,7 @@ echo Start envsetup.sh
 echo Preparing Device: angler
 breakfast angler
 
-# Make UNOFFICIAL
+# Make OFFICIAL
 echo Set Build Type to UNOFFICIAL
 export OWNROM_BUILDTYPE=UNOFFICIAL
 
@@ -33,6 +33,11 @@ breakfast angler
 # Turn on CCACHE
 echo Turning on CCACHE
 export USE_CCACHE=1
+
+# Make the Stars Fall!
+echo Falling Stars
+echo export I_WANT_A_QUAIL_STAR=true
+export I_WANT_A_QUAIL_STAR=true
 
 # fix jack server heap size error
 echo Fixing jack server heap size error
