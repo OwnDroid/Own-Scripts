@@ -22,7 +22,7 @@ echo Start envsetup.sh
 echo Preparing Device: angler
 breakfast angler
 
-# Make OFFICIAL
+# Make UNOFFICIAL
 echo Set Build Type to UNOFFICIAL
 export OWNROM_BUILDTYPE=UNOFFICIAL
 
