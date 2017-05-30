@@ -22,9 +22,9 @@ echo Start envsetup.sh
 echo Preparing Device: angler
 breakfast angler
 
-# Make OFFICIAL
-echo Set Build Type to OFFICIAL
-export OWNROM_BUILDTYPE=OFFICIAL
+# Make UNOFFICIAL
+echo Set Build Type to UNOFFICIAL
+export OWNROM_BUILDTYPE=UNOFFICIAL
 
 # Setting out dir to SSD
 echo Setting out dir to SSD
