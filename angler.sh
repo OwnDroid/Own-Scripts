@@ -22,12 +22,17 @@ echo Start envsetup.sh
 echo Preparing Device: angler
 breakfast angler
 
-# Make UNOFFICIAL
-echo Set Build Type to UNOFFICIAL
-export OWNROM_BUILDTYPE=UNOFFICIAL
+# Make OFFICIAL
+echo Set Build Type to OFFICIAL
+export OWNROM_BUILDTYPE=OFFICIAL
+
+# Setting out dir to SSD
+echo Setting out dir to SSD
+export OUT_DIR_COMMON_BASE=/home/owndroid/Bureaublad/OwnOUT
 
 # Check breakfast again
 echo Check OWNROM_VERSION= to be sure!
+echo Check OUT_DIR= to be sure!
 breakfast angler
 
 # Turn on CCACHE
@@ -47,9 +52,5 @@ export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -X
 echo Restartig jack server to apply updates! 
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
-
-# Setting out dir to SSD
-echo Setting out dir to SSD
-export OUT_DIR_COMMON_BASE=/home/owndroid/Bureaublad/OwnOUT
 
 echo Finished now make a damn build!!!
