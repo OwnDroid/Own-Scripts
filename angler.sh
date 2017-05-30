@@ -41,11 +41,15 @@ export I_WANT_A_QUAIL_STAR=true
 
 # fix jack server heap size error
 echo Fixing jack server heap size error
-export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx16g"
  
 # restart jack to apply updates
 echo Restartig jack server to apply updates! 
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
 
-echo Finished!
+# Setting out dir to SSD
+echo Setting out dir to SSD
+export OUT_DIR_COMMON_BASE=/home/owndroid/Bureaublad/OwnOUT
+
+echo Finished now make a damn build!!!
